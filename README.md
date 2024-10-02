@@ -29,10 +29,9 @@ This project demonstrates the setup of an AWS infrastructure using **VPC** and *
    - terraform apply
 
 ## Project Structure
-│
-├── main.tf                 # Terraform providers info
-├── vpc.tf                  # create virtual private cloud(vpc) in aws includings subnets, internet gateway, routing table
-├── outputs.tf              # Terraform output values
-├── security_groups.tf      # create a custom sg in aws using terraform
-└── ec2.tf                  # deploy an EC2 instance in aws using IAC 
+  - ├── main.tf                 # Terraform providers info
+  - ├── vpc.tf                  # create virtual private cloud(vpc) in aws includings subnets, internet gateway, routing table
+  - ├── outputs.tf              # Terraform output values
+  - ├── security_groups.tf      # create a custom sg in aws using terraform
+  - └── ec2.tf                  # deploy an EC2 instance in aws using IAC 
 =======
