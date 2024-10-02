@@ -35,5 +35,3 @@ This project demonstrates the setup of an AWS infrastructure using **VPC** and *
 ├── security_groups.tf      # create a custom sg in aws using terraform
 └── ec2.tf                  # deploy an EC2 instance in aws using IAC 
 =======
-# aws-ec2-nginx-project
->>>>>>> e3f1b74 (modifying ec2 config files, adding conditions)
