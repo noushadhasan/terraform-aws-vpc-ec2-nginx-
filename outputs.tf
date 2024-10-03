@@ -4,7 +4,7 @@ output "instance_public_ip" {
 }
 
 output "instance_url" {
-  description = "The URL to access the Nginx server"
+  description = "The URL to access the Nginx server is-"
   value       = "http://${aws_instance.nginxserver.public_ip}"
 }
 output "vpn_id" {
