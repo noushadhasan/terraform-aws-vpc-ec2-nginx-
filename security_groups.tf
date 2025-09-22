@@ -1,4 +1,4 @@
-resource "aws_security_group" "nginx-sg" {
+resource "aws_security_group" "my-security-grp" {
   vpc_id = aws_vpc.new_vpc.id
 
   #Inbound rule for HTTP
@@ -24,6 +24,6 @@ resource "aws_security_group" "nginx-sg" {
   }
 
   tags = {
-    Name = "nginx-sg"
+    Name = "my-sg"
   }
 }

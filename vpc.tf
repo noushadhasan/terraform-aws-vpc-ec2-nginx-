@@ -1,14 +1,14 @@
 #Create a VPC
 resource "aws_vpc" "new_vpc" {
-  cidr_block = "30.0.0.0/16"
+  cidr_block = "10.0.0.0/16"
   tags = {
-    Name = "New_vpc"
+    Name = "my_vpc"
   }
 }
 
 #Private subnet
 resource "aws_subnet" "private-subnet" {
-  cidr_block = "30.0.1.0/24"
+  cidr_block = "10.0.1.0/24"
   vpc_id     = aws_vpc.new_vpc.id
   tags = {
     Name = "private-subnet"
@@ -17,7 +17,7 @@ resource "aws_subnet" "private-subnet" {
 
 #Public subnet
 resource "aws_subnet" "public-subnet" {
-  cidr_block              = "30.0.2.0/24"
+  cidr_block              = "10.0.2.0/24"
   vpc_id                  = aws_vpc.new_vpc.id
   map_public_ip_on_launch = true
   tags = {
